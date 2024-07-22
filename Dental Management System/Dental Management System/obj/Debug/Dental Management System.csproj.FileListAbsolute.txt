@@ -1,0 +1,20 @@
+C:\Users\pkare\source\repos\Dental Management System\Dental Management System\bin\Debug\Dental Management System.exe.config
+C:\Users\pkare\source\repos\Dental Management System\Dental Management System\bin\Debug\Dental Management System.exe
+C:\Users\pkare\source\repos\Dental Management System\Dental Management System\bin\Debug\Dental Management System.pdb
+C:\Users\pkare\source\repos\Dental Management System\Dental Management System\bin\Debug\Guna.UI.dll
+C:\Users\pkare\source\repos\Dental Management System\Dental Management System\obj\Debug\Dental Management System.csproj.AssemblyReference.cache
+C:\Users\pkare\source\repos\Dental Management System\Dental Management System\obj\Debug\Dental_Management_System.Form1.resources
+C:\Users\pkare\source\repos\Dental Management System\Dental Management System\obj\Debug\Dental_Management_System.Properties.Resources.resources
+C:\Users\pkare\source\repos\Dental Management System\Dental Management System\obj\Debug\Dental Management System.csproj.GenerateResource.cache
+C:\Users\pkare\source\repos\Dental Management System\Dental Management System\obj\Debug\Dental Management System.csproj.CoreCompileInputs.cache
+C:\Users\pkare\source\repos\Dental Management System\Dental Management System\obj\Debug\Dental M.40F1C4E3.Up2Date
+C:\Users\pkare\source\repos\Dental Management System\Dental Management System\obj\Debug\Dental Management System.exe
+C:\Users\pkare\source\repos\Dental Management System\Dental Management System\obj\Debug\Dental Management System.pdb
+C:\Users\pkare\source\repos\Dental Management System\Dental Management System\obj\Debug\Dental_Management_System.Admin_Login_Frm.resources
+C:\Users\pkare\source\repos\Dental Management System\Dental Management System\obj\Debug\Dental_Management_System.Diagnosis_Frm.resources
+C:\Users\pkare\source\repos\Dental Management System\Dental Management System\obj\Debug\Dental_Management_System.Doctors_Frm.resources
+C:\Users\pkare\source\repos\Dental Management System\Dental Management System\obj\Debug\Dental_Management_System.Medicine_Frm.resources
+C:\Users\pkare\source\repos\Dental Management System\Dental Management System\obj\Debug\Dental_Management_System.Patient_Frm.resources
+C:\Users\pkare\source\repos\Dental Management System\Dental Management System\obj\Debug\Dental_Management_System.User_Login_Frm.resources
+C:\Users\pkare\source\repos\Dental Management System\Dental Management System\bin\Debug\Bunifu_UI_v1.52.dll
+C:\Users\pkare\source\repos\Dental Management System\Dental Management System\obj\Debug\Dental_Management_System.Dashboard_Frm.resources

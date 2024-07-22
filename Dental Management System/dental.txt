@@ -1,0 +1,17 @@
+select d.id_diagnosis, 
+
+select p.id_prodi as id_prodi, p.nama_prodi as nama_prodi, 
+j.nama_jurusan as nama_jurusan 
+from prodi p join jurusan j
+on j.id_jurusan = p.id_jurusan";
+
+tampil
+SELECT p.id_prodi, p.nama_prodi, j.nama_jurusan
+FROM prodi p JOIN jurusan j
+WHERE p.id_jurusan = j.id_jurusan;";
+
+get all
+select p.id_prodi as id_prodi, p.nama_prodi as nama_prodi,
+j.nama_jurusan as nama_jurusan
+from prodi p join jurusan j
+on j.id_jurusan = p.id_jurusan";

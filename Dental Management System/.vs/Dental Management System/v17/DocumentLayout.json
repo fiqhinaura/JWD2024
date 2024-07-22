@@ -1,0 +1,237 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\pkare\\source\\repos\\Dental Management System\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3759A828-5757-4441-B0ED-71D3E47EC4B8}|Dental Management System\\Dental Management System.csproj|c:\\users\\pkare\\source\\repos\\dental management system\\dental management system\\doctors_frm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3759A828-5757-4441-B0ED-71D3E47EC4B8}|Dental Management System\\Dental Management System.csproj|solutionrelative:dental management system\\doctors_frm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3759A828-5757-4441-B0ED-71D3E47EC4B8}|Dental Management System\\Dental Management System.csproj|c:\\users\\pkare\\source\\repos\\dental management system\\dental management system\\dashboard_frm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3759A828-5757-4441-B0ED-71D3E47EC4B8}|Dental Management System\\Dental Management System.csproj|solutionrelative:dental management system\\dashboard_frm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3759A828-5757-4441-B0ED-71D3E47EC4B8}|Dental Management System\\Dental Management System.csproj|c:\\users\\pkare\\source\\repos\\dental management system\\dental management system\\medicine_frm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3759A828-5757-4441-B0ED-71D3E47EC4B8}|Dental Management System\\Dental Management System.csproj|solutionrelative:dental management system\\medicine_frm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3759A828-5757-4441-B0ED-71D3E47EC4B8}|Dental Management System\\Dental Management System.csproj|c:\\users\\pkare\\source\\repos\\dental management system\\dental management system\\diagnosis_frm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3759A828-5757-4441-B0ED-71D3E47EC4B8}|Dental Management System\\Dental Management System.csproj|solutionrelative:dental management system\\diagnosis_frm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3759A828-5757-4441-B0ED-71D3E47EC4B8}|Dental Management System\\Dental Management System.csproj|c:\\users\\pkare\\source\\repos\\dental management system\\dental management system\\patient_frm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3759A828-5757-4441-B0ED-71D3E47EC4B8}|Dental Management System\\Dental Management System.csproj|solutionrelative:dental management system\\patient_frm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3759A828-5757-4441-B0ED-71D3E47EC4B8}|Dental Management System\\Dental Management System.csproj|c:\\users\\pkare\\source\\repos\\dental management system\\dental management system\\doctors_frm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3759A828-5757-4441-B0ED-71D3E47EC4B8}|Dental Management System\\Dental Management System.csproj|solutionrelative:dental management system\\doctors_frm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3759A828-5757-4441-B0ED-71D3E47EC4B8}|Dental Management System\\Dental Management System.csproj|c:\\users\\pkare\\source\\repos\\dental management system\\dental management system\\user_login_frm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3759A828-5757-4441-B0ED-71D3E47EC4B8}|Dental Management System\\Dental Management System.csproj|solutionrelative:dental management system\\user_login_frm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3759A828-5757-4441-B0ED-71D3E47EC4B8}|Dental Management System\\Dental Management System.csproj|c:\\users\\pkare\\source\\repos\\dental management system\\dental management system\\user_login_frm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3759A828-5757-4441-B0ED-71D3E47EC4B8}|Dental Management System\\Dental Management System.csproj|solutionrelative:dental management system\\user_login_frm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3759A828-5757-4441-B0ED-71D3E47EC4B8}|Dental Management System\\Dental Management System.csproj|c:\\users\\pkare\\source\\repos\\dental management system\\dental management system\\admin_login_frm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3759A828-5757-4441-B0ED-71D3E47EC4B8}|Dental Management System\\Dental Management System.csproj|solutionrelative:dental management system\\admin_login_frm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3759A828-5757-4441-B0ED-71D3E47EC4B8}|Dental Management System\\Dental Management System.csproj|c:\\users\\pkare\\source\\repos\\dental management system\\dental management system\\admin_login_frm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3759A828-5757-4441-B0ED-71D3E47EC4B8}|Dental Management System\\Dental Management System.csproj|solutionrelative:dental management system\\admin_login_frm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3759A828-5757-4441-B0ED-71D3E47EC4B8}|Dental Management System\\Dental Management System.csproj|c:\\users\\pkare\\source\\repos\\dental management system\\dental management system\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3759A828-5757-4441-B0ED-71D3E47EC4B8}|Dental Management System\\Dental Management System.csproj|solutionrelative:dental management system\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3759A828-5757-4441-B0ED-71D3E47EC4B8}|Dental Management System\\Dental Management System.csproj|c:\\users\\pkare\\source\\repos\\dental management system\\dental management system\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3759A828-5757-4441-B0ED-71D3E47EC4B8}|Dental Management System\\Dental Management System.csproj|solutionrelative:dental management system\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3759A828-5757-4441-B0ED-71D3E47EC4B8}|Dental Management System\\Dental Management System.csproj|c:\\users\\pkare\\source\\repos\\dental management system\\dental management system\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3759A828-5757-4441-B0ED-71D3E47EC4B8}|Dental Management System\\Dental Management System.csproj|solutionrelative:dental management system\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Dashboard_Frm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\pkare\\source\\repos\\Dental Management System\\Dental Management System\\Dashboard_Frm.cs",
+              "RelativeDocumentMoniker": "Dental Management System\\Dashboard_Frm.cs",
+              "ToolTip": "C:\\Users\\pkare\\source\\repos\\Dental Management System\\Dental Management System\\Dashboard_Frm.cs [Design]",
+              "RelativeToolTip": "Dental Management System\\Dashboard_Frm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T07:55:09.573Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Medicine_Frm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\pkare\\source\\repos\\Dental Management System\\Dental Management System\\Medicine_Frm.cs",
+              "RelativeDocumentMoniker": "Dental Management System\\Medicine_Frm.cs",
+              "ToolTip": "C:\\Users\\pkare\\source\\repos\\Dental Management System\\Dental Management System\\Medicine_Frm.cs [Design]",
+              "RelativeToolTip": "Dental Management System\\Medicine_Frm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T06:38:39.998Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Diagnosis_Frm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\pkare\\source\\repos\\Dental Management System\\Dental Management System\\Diagnosis_Frm.cs",
+              "RelativeDocumentMoniker": "Dental Management System\\Diagnosis_Frm.cs",
+              "ToolTip": "C:\\Users\\pkare\\source\\repos\\Dental Management System\\Dental Management System\\Diagnosis_Frm.cs [Design]",
+              "RelativeToolTip": "Dental Management System\\Diagnosis_Frm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T06:35:40.684Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Doctors_Frm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\pkare\\source\\repos\\Dental Management System\\Dental Management System\\Doctors_Frm.cs",
+              "RelativeDocumentMoniker": "Dental Management System\\Doctors_Frm.cs",
+              "ToolTip": "C:\\Users\\pkare\\source\\repos\\Dental Management System\\Dental Management System\\Doctors_Frm.cs [Design]",
+              "RelativeToolTip": "Dental Management System\\Doctors_Frm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T06:32:19.945Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Patient_Frm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\pkare\\source\\repos\\Dental Management System\\Dental Management System\\Patient_Frm.cs",
+              "RelativeDocumentMoniker": "Dental Management System\\Patient_Frm.cs",
+              "ToolTip": "C:\\Users\\pkare\\source\\repos\\Dental Management System\\Dental Management System\\Patient_Frm.cs [Design]",
+              "RelativeToolTip": "Dental Management System\\Patient_Frm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T06:29:42.436Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Doctors_Frm.cs",
+              "DocumentMoniker": "C:\\Users\\pkare\\source\\repos\\Dental Management System\\Dental Management System\\Doctors_Frm.cs",
+              "RelativeDocumentMoniker": "Dental Management System\\Doctors_Frm.cs",
+              "ToolTip": "C:\\Users\\pkare\\source\\repos\\Dental Management System\\Dental Management System\\Doctors_Frm.cs",
+              "RelativeToolTip": "Dental Management System\\Doctors_Frm.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAASwBUAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T06:28:09.375Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "User_Login_Frm.cs",
+              "DocumentMoniker": "C:\\Users\\pkare\\source\\repos\\Dental Management System\\Dental Management System\\User_Login_Frm.cs",
+              "RelativeDocumentMoniker": "Dental Management System\\User_Login_Frm.cs",
+              "ToolTip": "C:\\Users\\pkare\\source\\repos\\Dental Management System\\Dental Management System\\User_Login_Frm.cs",
+              "RelativeToolTip": "Dental Management System\\User_Login_Frm.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T04:34:26.208Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "User_Login_Frm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\pkare\\source\\repos\\Dental Management System\\Dental Management System\\User_Login_Frm.cs",
+              "RelativeDocumentMoniker": "Dental Management System\\User_Login_Frm.cs",
+              "ToolTip": "C:\\Users\\pkare\\source\\repos\\Dental Management System\\Dental Management System\\User_Login_Frm.cs [Design]",
+              "RelativeToolTip": "Dental Management System\\User_Login_Frm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T04:15:53.552Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Admin_Login_Frm.cs",
+              "DocumentMoniker": "C:\\Users\\pkare\\source\\repos\\Dental Management System\\Dental Management System\\Admin_Login_Frm.cs",
+              "RelativeDocumentMoniker": "Dental Management System\\Admin_Login_Frm.cs",
+              "ToolTip": "C:\\Users\\pkare\\source\\repos\\Dental Management System\\Dental Management System\\Admin_Login_Frm.cs",
+              "RelativeToolTip": "Dental Management System\\Admin_Login_Frm.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T04:11:46.07Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\pkare\\source\\repos\\Dental Management System\\Dental Management System\\Program.cs",
+              "RelativeDocumentMoniker": "Dental Management System\\Program.cs",
+              "ToolTip": "C:\\Users\\pkare\\source\\repos\\Dental Management System\\Dental Management System\\Program.cs",
+              "RelativeToolTip": "Dental Management System\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T04:11:01.094Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Admin_Login_Frm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\pkare\\source\\repos\\Dental Management System\\Dental Management System\\Admin_Login_Frm.cs",
+              "RelativeDocumentMoniker": "Dental Management System\\Admin_Login_Frm.cs",
+              "ToolTip": "C:\\Users\\pkare\\source\\repos\\Dental Management System\\Dental Management System\\Admin_Login_Frm.cs [Design]",
+              "RelativeToolTip": "Dental Management System\\Admin_Login_Frm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T03:29:22.286Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\pkare\\source\\repos\\Dental Management System\\Dental Management System\\Form1.cs",
+              "RelativeDocumentMoniker": "Dental Management System\\Form1.cs",
+              "ToolTip": "C:\\Users\\pkare\\source\\repos\\Dental Management System\\Dental Management System\\Form1.cs",
+              "RelativeToolTip": "Dental Management System\\Form1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAWwBUAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T03:09:33.604Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\pkare\\source\\repos\\Dental Management System\\Dental Management System\\Form1.cs",
+              "RelativeDocumentMoniker": "Dental Management System\\Form1.cs",
+              "ToolTip": "C:\\Users\\pkare\\source\\repos\\Dental Management System\\Dental Management System\\Form1.cs [Design]",
+              "RelativeToolTip": "Dental Management System\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T03:06:03.712Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

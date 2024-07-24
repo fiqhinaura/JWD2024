@@ -84,9 +84,19 @@ include 'koneksi.php';
                     }
 
                     echo "<td>
-                            <a href='edit.php?id_pasien={$row['id_pasien']}' class='btn btn-warning btn-sm'>Edit</a>
-                            <button type='button' class='btn btn-danger btn-sm' data-bs-toggle='modal' data-bs-target='#deleteModal' data-id='{$row['id_pasien']}'>Delete</button>
-                          </td>";
+                   <div class='btn-group'>
+                        <button type='button' class='btn btn-secondary btn-sm dropdown-toggle' data-bs-toggle='dropdown' aria-expanded='false'>
+                            Aksi
+                        </button>
+                        <ul class='dropdown-menu'>
+                            <li><a class='dropdown-item' href='detail.php?id_pasien={$row['id_pasien']}'>Detail</a></li>
+                            <li><a class='dropdown-item' href='cetak.php?id_pasien={$row['id_pasien']}' target='_blank'>Cetak</a></li>
+                            <li><a class='dropdown-item' href='edit.php?id_pasien={$row['id_pasien']}'>Edit</a></li>
+                            <li><hr class='dropdown-divider'></li>
+                            <li><button type='button' class='dropdown-item' data-bs-toggle='modal' data-bs-target='#deleteModal' data-id='{$row['id_pasien']}'>Delete</button></li>
+                        </ul>
+                    </div>
+                  </td>";
                     echo "</tr>";
 
                 }

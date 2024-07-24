@@ -4,12 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- INI JUDUL -->
     <title>Tambah Data Pasien</title>
     <!-- Link ke file CSS Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
+    <!-- INI NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
         <div class="container">
             <a class="navbar-brand" href="#">RS Medika</a>
@@ -36,22 +38,32 @@
         </div>
     </nav>
 
+    <!-- MULAI FORM INPUT -->
     <div class="container mb-5">
+        <!-- BUTTON KEMBALI KE PASIEN -->
         <a href="pasien.php" class="btn btn-danger mb-4">Kembali</a>
         <h3 class="mb-4">TAMBAH DATA PASIEN</h3>
+        <!-- UNTUK AKSI TAMBAH -->
         <form method="post" action="tambah_aksi.php" enctype="multipart/form-data">
+            <!-- MASUKKAN ID PASIEN -->
             <div class="mb-3">
                 <label for="id_pasien" class="form-label">ID Pasien</label>
                 <input type="text" name="id_pasien" class="form-control" id="id_pasien" required>
             </div>
+            <!-- MASUKKAN NAMA TIPE TEXT -->
             <div class="mb-3">
                 <label for="nama_pasien" class="form-label">Nama</label>
                 <input type="text" name="nama_pasien" class="form-control" id="nama_pasien" required>
             </div>
+            <!-- MASUKKAN TGL TIPE DATE -->
             <div class="mb-3">
                 <label for="tanggal_lahir_pasien" class="form-label">Tanggal Lahir</label>
-                <input type="date" name="tanggal_lahir_pasien" class="form-control" id="tanggal_lahir_pasien" required>
+                <!-- date ymd untuk set date sekarang -->
+                <!-- kalo mau input bebas value di hilangkan -->
+                <input type="date" name="tanggal_lahir_pasien" class="form-control" id="tanggal_lahir_pasien"
+                    value="<?php echo date('Y-m-d') ?>" required>
             </div>
+            <!-- JENIS KELAMIN DENGAN RADIO BTN -->
             <div class="mb-3">
                 <label class="form-label">Jenis Kelamin</label>
                 <div class="form-check">
@@ -65,10 +77,13 @@
                     <label class="form-check-label" for="jenis_kelamin_perempuan">Perempuan</label>
                 </div>
             </div>
+            <!-- NO HP DENGAN TIPE NUMBER -->
             <div class="mb-3">
                 <label for="nohp_pasien" class="form-label">No. HP</label>
-                <input type="number" name="nohp_pasien" class="form-control" id="nohp_pasien" required>
+                <input type="number" name="nohp_pasien" class="form-control" id="nohp_pasien" onchange="validNomer"
+                    required>
             </div>
+            <!-- GOLDAR DENGAN SELECT OPTION -->
             <div class="mb-3">
                 <label for="goldar_pasien" class="form-label">Golongan Darah</label>
                 <select name="goldar_pasien" class="form-select" id="goldar_pasien" required>
@@ -83,14 +98,17 @@
                     <option value="O-">O-</option>
                 </select>
             </div>
+            <!-- ALAMAT DENGAN TEXTAREA -->
             <div class="mb-3">
                 <label for="alamat_pasien" class="form-label">Alamat</label>
                 <textarea name="alamat_pasien" class="form-control" id="alamat_pasien" rows="3" required></textarea>
             </div>
+            <!-- KTP DENGAN TIPE FILE UNTUK FOTO KTP -->
             <div class="mb-3">
                 <label for="ktp" class="form-label">Foto KTP</label>
                 <input type="file" name="ktp" class="form-control" id="ktp" accept="image/*">
             </div>
+            <!-- JENIS DENGAN SELECT OPTION LABEL JENIS -->
             <div class="mb-3">
                 <label for="jenis" class="form-label">Jenis</label>
                 <select name="jenis" class="form-select" id="jenis" required>
@@ -142,6 +160,17 @@
 
         // Initialize pricing on page load
         updatePricing();
+
+        // fungsi validasi nomer hp
+        function validNomer() {
+            var nohp = document.getElementById('nohp_pasien').value;
+            if (nohp.length > 13) {
+                alert('Nomor HP tidak valid');
+                document.getElementById('nohp_pasien').value = '';
+            }
+        }
+
+        document.getElementById('nohp_pasien').addEventListener('change', validNomer);
     </script>
 </body>
 

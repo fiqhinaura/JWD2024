@@ -67,7 +67,7 @@
             </div>
             <div class="mb-3">
                 <label for="nohp_pasien" class="form-label">No. HP</label>
-                <input type="text" name="nohp_pasien" class="form-control" id="nohp_pasien" value="<?php echo $d['nohp_pasien']; ?>" required>
+                <input type="text" name="nohp_pasien" class="form-control" id="nohp_pasien" value="<?php echo $d['nohp_pasien']; ?>" onchange="validNomer" required>
             </div>
             <div class="mb-3">
                 <label for="goldar_pasien" class="form-label">Golongan Darah</label>
@@ -137,6 +137,16 @@
             var totalTagihan = biayaPerHari * (parseInt(lamaPerawatan) || 0);
             document.getElementById('total_tagihan').value = totalTagihan.toLocaleString();
         });
+
+        function validNomer() {
+            var nohp = document.getElementById('nohp_pasien').value;
+            if (nohp.length > 13) {
+                alert('Nomor HP tidak valid');
+                document.getElementById('nohp_pasien').value = '';
+            }
+        }
+
+        document.getElementById('nohp_pasien').addEventListener('change', validNomer);
     </script>
 </body>
 

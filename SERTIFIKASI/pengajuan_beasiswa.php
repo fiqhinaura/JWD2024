@@ -9,25 +9,8 @@
 </head>
 
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <a class="navbar-brand" href="#">Beasiswa</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-            <li class="nav-item ">
-                <a class="nav-link " href="home.php">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="pengajuan_beasiswa.php">Pengajuan</a>
-            </li>
-            <li class="nav-item ">
-                <a class="nav-link" href="status_pengajuan.php">Status <span class="sr-only">(current)</span></a>
-            </li>
-        </ul>
-    </div>
-</nav>
+<?php include 'nav.php' ?>
+<!-- container form -->
     <div class="container mt-5">
         <h2>Form Pengajuan Beasiswa</h2>
         <form action="tambah_aksi.php" method="post" enctype="multipart/form-data">
@@ -47,6 +30,7 @@
                 <label for="no_hp">No HP</label>
                 <input type="number" class="form-control" id="no_hp" name="no_hp" onchange="validNomer()" required>
             </div>
+            <!-- dropdown select option sesuai value yang ada di enum db -->
             <div class="form-group">
                 <label for="semester">Semester</label>
                 <select class="form-control" id="semester" name="semester" required>
@@ -78,6 +62,12 @@
                 <input type="file" class="form-control-file" id="berkas" name="berkas" accept=".pdf,.jpg,.zip">
             </div>
             <button type="submit" class="btn btn-primary" id="ajukan">Ajukan</button>
+            <div class="form-group">
+                <p>     </p>
+            </div>
+            <br>
+            <br>
+            <br>
         </form>
     </div>
 
@@ -86,11 +76,17 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <script>
+        // nama function
         function validateEmail() {
+            // mengambil nilai email berdasarkan id dan disimpan di emailInput
             const emailInput = document.getElementById('email');
+            // value dari emailInput disimpan di cons email
             const email = emailInput.value;
+            // untuk deklarasikan pattern yang sesuai
             const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            // cek apakah email sudah sesuai dengan emailpattern
             if (!emailPattern.test(email)) {
+                // jika tidak akan muncul allert
                 alert('Email tidak valid. Harap masukkan email yang benar.');
                 emailInput.focus();
                 return false;
@@ -99,11 +95,13 @@
         }
 
         function updateIPK() {
+            // mengambil nilai input dan disimpan dalam variabel
             var nim = document.getElementById('nim').value;
             var ipkInput = document.getElementById('ipk');
             var beasiswaSelect = document.getElementById('beasiswa');
             var berkasInput = document.getElementById('berkas');
             
+            // set ipk 0
             let ipk = 0;
 
             if (nim === '101') {
@@ -132,9 +130,11 @@
                 ipk = 3.8;
             }
 
+            // var ipkinput valuenya diisi dengan ipk yang memenuhi percabangan diatas
             ipkInput.value = ipk;
 
-            // Enable or disable fields based on IPK
+        
+            // Enable or disable kolom dari IPK
             if (ipk >= 3.0) {
                 beasiswaSelect.disabled = false;
                 berkasInput.disabled = false;
@@ -144,10 +144,15 @@
             }
         }
 
+        //function validNomer
         function validNomer() {
+            // mengambil input di no_hp dan disimpan di nohp
             var nohp = document.getElementById('no_hp').value;
+            // cek percabangan panjang nohp itu gak boleh lebih dari 13
             if (nohp.length > 13) {
+                // jika lebih dari 13 maka akan alert tidak valid
                 alert('Nomor HP tidak valid');
+                // dan inputan akan otomatis di kosongkan
                 document.getElementById('no_hp').value = '';
             }
         }

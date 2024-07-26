@@ -35,7 +35,9 @@ $result = mysqli_query($koneksi, $query);
         </thead>
         <tbody>
             <?php
+            // kalo datanya ada maka akan mengambil data
             if (mysqli_num_rows($result) > 0) {
+                // mengambil setiap baris data sampai data sudah tidak ada
                 while ($row = mysqli_fetch_assoc($result)) {
                     echo "<tr>";
                     echo "<td>{$row['nim']}</td>";
@@ -46,16 +48,19 @@ $result = mysqli_query($koneksi, $query);
                     echo "<td>{$row['ipk']}</td>";
                     echo "<td>{$row['beasiswa']}</td>";
                     echo "<td>";
+                    // cek apakah baris berkas tidak kosong, jika tidak maka akan mengambil path berkas yang ada
                     if (!empty($row['berkas'])) {
                         $berkas_path = 'berkas/' . $row['berkas'];
+                        // cek apakah berkas ada di server atau tidak, jika ada maka path berkas akan diambil untuk menampilkan
                         if (file_exists($berkas_path)) {
-                            echo '<img src="' . $berkas_path . '" width="70" height="70">';
+                            echo '<img src="' . $berkas_path . '" width="50" height="50">';
                         } else {
                             echo 'Berkas tidak ada di server';
                         }
                     } else {
                         echo 'Berkas Kosong';
                     }
+                    // tampilkan status yang sudah kita set default di database
                     echo "</td>";
                     echo "<td>{$row['status']}</td>";
                     echo "</tr>";

@@ -12,6 +12,7 @@
     </style>
 </head>
 <body>
+    <!-- ini navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <a class="navbar-brand" href="#">Beasiswa</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,7 +32,7 @@
         </ul>
     </div>
 </nav>
-
+<!-- ini footer -->
 <footer class="bg-primary text-white py-2 fixed-bottom">
     <div class="container text-center">
         <p class="mb-0">&copy; 2024 Beasiswa. All rights reserved.</p>

@@ -3,13 +3,36 @@ tabel tbl_beasiswa
 nim int
 nama varchar
 email varchar
-no_hp int
+no_hp char
 semester enum 1 2 3 4 5 6 7 8
 ipk float
 beasiswa enum pertamina, djarum, lpdp, kipk
 berkas mediumblob 
 
+PHP.ini adalah berkas konfigurasi yang berisi pengaturan PHP server web Anda. Berkas ini memungkinkan Anda mengontrol aturan terkait PHP di situs Anda, seperti menetapkan batas ukuran saat mengunggah berkas dan menyembunyikan pesan kesalahan.
 
 validasi email @
 validasi no hp dengan number
 tambahkan kolom NIM yang bisa otomatis semua datanya
+
+sekumpulan kode yang berisi set fungsi atau class yang digunakan untuk melakukan tugas tertentu
+
+identitas nama dan nomer peserta trs mock up trs link google drive (mockup dan link)
+pdf lagi ss website
+
+Bootstrap adalah framework CSS yang membantu dalam pengembangan desain web yang responsif dan mobile-first dengan cepat.
+Membuat layout web yang responsif dengan grid system.
+Menggunakan komponen UI yang siap pakai seperti tombol, form, dan navbar.
+Menyediakan tema yang konsisten dan modern untuk situs web
+
+MySQLi adalah ekstensi PHP yang menyediakan antarmuka untuk bekerja dengan database MySQL.
+Melakukan operasi database seperti query, insert, update, delete.
+Mendukung prepared statements untuk keamanan dan efisiensi.
+Menyediakan API berorientasi objek dan prosedural
+
+PDO (PHP Data Objects)
+Deskripsi: PDO adalah ekstensi PHP yang menyediakan interface konsisten untuk mengakses berbagai jenis database.
+Kegunaan:
+Menggunakan prepared statements untuk meningkatkan keamanan dan kinerja.
+Mendukung berbagai driver database seperti MySQL, PostgreSQL, SQLite.
+Menyediakan abstraksi database yang membuat kode lebih portable.

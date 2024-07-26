@@ -7,11 +7,13 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
+    <!-- include nav.php untuk navbar dan footer -->
 <?php include 'nav.php' ?>
 <div class="container mt-5">
     
     <h4>Jenis Beasiswa</h4>
     <ul>
+        <!-- strong untuk bold -->
         <li><strong>Pertamina:</strong> Beasiswa ini ditawarkan oleh PT Pertamina untuk mendukung pelajar yang berprestasi di bidang akademis dan non-akademis.</li>
         <li><strong>LPDP:</strong> Lembaga Pengelola Dana Pendidikan (LPDP) menawarkan beasiswa untuk studi di dalam negeri dan luar negeri dengan berbagai kriteria.</li>
         <li><strong>Djarum:</strong> Beasiswa Djarum memberikan bantuan kepada mahasiswa yang berprestasi di berbagai bidang studi.</li>

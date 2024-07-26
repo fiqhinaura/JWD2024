@@ -1,0 +1,15 @@
+database jwd
+tabel tbl_beasiswa 
+nim int
+nama varchar
+email varchar
+no_hp int
+semester enum 1 2 3 4 5 6 7 8
+ipk float
+beasiswa enum pertamina, djarum, lpdp, kipk
+berkas mediumblob 
+
+
+validasi email @
+validasi no hp dengan number
+tambahkan kolom NIM yang bisa otomatis semua datanya

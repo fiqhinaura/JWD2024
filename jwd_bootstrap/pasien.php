@@ -74,10 +74,12 @@ include 'koneksi.php';
                     echo "<td>{$row['lama_perawatan']} hari</td>";
                     echo "<td>Rp. {$row['total_tagihan']}</td>";
 
+                    // {$imageUrl}
                     // Menampilkan gambar dari kolom `ktp`
                     if (!empty($row['ktp'])) {
                         // Tampilkan gambar dari `get_ktp.php`
                         $imageUrl = "get_ktp.php?id_pasien={$row['id_pasien']}";
+                        // {$imageUrl}
                         echo "<td><img src='{$imageUrl}' alt='Foto KTP' style='width: 100px; height: auto;'></td>";
                     } else {
                         echo "<td>Tidak ada</td>";
@@ -85,7 +87,7 @@ include 'koneksi.php';
 
                     echo "<td>
                    <div class='btn-group'>
-                        <button type='button' class='btn btn-secondary btn-sm dropdown-toggle' data-bs-toggle='dropdown' aria-expanded='false'>
+                        <button type='button' class='btn btn-warning btn-sm dropdown-toggle' data-bs-toggle='dropdown' aria-expanded='false'>
                             Aksi
                         </button>
                         <ul class='dropdown-menu'>

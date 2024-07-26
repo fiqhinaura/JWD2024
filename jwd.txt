@@ -1,0 +1,12 @@
+id_pasien
+nama
+tgl lahir
+jenis kelamin
+no hp
+goldar
+alamat
+
+ktp (mediumblob)
+jenis BPJS(biaya 0), Umum(biaya 157.000/hari), Pegawai(biaya 50.000) enum
+lama_perawatan (per hari) int
+total_tagihan char

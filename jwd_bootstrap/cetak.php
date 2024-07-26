@@ -1,99 +1,66 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+include 'koneksi.php';
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cetak Data Pasien</title>
-    <!-- Link ke file CSS Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        @media print {
-            .no-print {
-                display: none;
-            }
-        }
-    </style>
-</head>
+require 'vendor/autoload.php';
 
-<body onload="window.print()">
-    <div class="container mt-5">
-        <header class="mb-4">
-            <h1 class="text-center">RS Medika</h1>
-        </header>
+use PhpOffice\PhpSpreadsheet\Spreadsheet;
+use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
 
-        <section>
-            <article>
-                <div class="container">
-                    <?php
-                    include 'koneksi.php';
-                    if (isset($_GET['id_pasien'])) {
-                        $id_pasien = $_GET['id_pasien'];
-                        $data = mysqli_query($koneksi, "SELECT * FROM pasien WHERE id_pasien='$id_pasien'");
-                        while ($d = mysqli_fetch_array($data)) {
-                            ?>
-                            <table class="table table-bordered">
-                                <tbody>
-                                    <tr>
-                                        <th>ID Pasien</th>
-                                        <td><?php echo $d['id_pasien']; ?></td>
-                                    </tr>
-                                    <tr>
-                                        <th>Nama</th>
-                                        <td><?php echo $d['nama_pasien']; ?></td>
-                                    </tr>
-                                    <tr>
-                                        <th>Tanggal Lahir</th>
-                                        <td><?php echo $d['tanggal_lahir_pasien']; ?></td>
-                                    </tr>
-                                    <tr>
-                                        <th>Jenis Kelamin</th>
-                                        <td><?php echo $d['jenis_kelamin']; ?></td>
-                                    </tr>
-                                    <tr>
-                                        <th>No. HP</th>
-                                        <td><?php echo $d['nohp_pasien']; ?></td>
-                                    </tr>
-                                    <tr>
-                                        <th>Golongan Darah</th>
-                                        <td><?php echo $d['goldar_pasien']; ?></td>
-                                    </tr>
-                                    <tr>
-                                        <th>Alamat</th>
-                                        <td><?php echo $d['alamat_pasien']; ?></td>
-                                    </tr>
-                                    <tr>
-                                        <th>Jenis</th>
-                                        <td><?php echo $d['jenis']; ?></td>
-                                    </tr>
-                                    <tr>
-                                        <th>Lama Perawatan</th>
-                                        <td><?php echo $d['lama_perawatan']; ?> hari</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Total Tagihan</th>
-                                        <td>Rp. <?php echo $d['total_tagihan']; ?></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <?php
-                        }
-                    } else {
-                        echo "<p>Data pasien tidak ditemukan.</p>";
-                    }
-                    ?>
-                </div>
-            </article>
-        </section>
+$id_pasien = $_GET['id_pasien'];
 
-        <footer class="mt-4 text-center no-print">
-            <button class="btn btn-primary" onclick="window.print()">Cetak</button>
-        </footer>
-    </div>
+$spreadsheet = new Spreadsheet();
+$sheet = $spreadsheet->getActiveSheet();
 
-    <!-- Link ke file JS Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
-</body>
+// Menggabungkan sel A1 hingga J1
+$sheet->mergeCells('A1:J1');
+$sheet->setCellValue('A1', 'Laporan Pasien - ID Pasien: ' . $id_pasien);
 
-</html>
+// Menyeting format teks agar sel yang digabungkan berada di tengah
+$sheet->getStyle('A1:J1')->getAlignment()->setHorizontal(\PhpOffice\PhpSpreadsheet\Style\Alignment::HORIZONTAL_CENTER);
+$sheet->getStyle('A1:J1')->getAlignment()->setVertical(\PhpOffice\PhpSpreadsheet\Style\Alignment::VERTICAL_CENTER);
+$sheet->getStyle('A1:J1')->getFont()->setBold(true);
+$sheet->getRowDimension('1')->setRowHeight(30); // Menyesuaikan tinggi baris jika diperlukan
+
+// Menetapkan header di baris 2
+$sheet->setCellValue('A2', 'ID Pasien');
+$sheet->setCellValue('B2', 'Nama');
+$sheet->setCellValue('C2', 'Tanggal Lahir');
+$sheet->setCellValue('D2', 'Jenis Kelamin');
+$sheet->setCellValue('E2', 'No. HP');
+$sheet->setCellValue('F2', 'Golongan Darah');
+$sheet->setCellValue('G2', 'Alamat');
+$sheet->setCellValue('H2', 'Jenis');
+$sheet->setCellValue('I2', 'Lama Perawatan');
+$sheet->setCellValue('J2', 'Total Tagihan');
+
+// Menetapkan data pasien di baris 3
+$query = "SELECT * FROM pasien WHERE id_pasien = $id_pasien";
+$result = mysqli_query($koneksi, $query);
+$row = mysqli_fetch_array($result);
+
+$sheet->setCellValue('A3', $row['id_pasien']);
+$sheet->setCellValue('B3', $row['nama_pasien']);
+$sheet->setCellValue('C3', $row['tanggal_lahir_pasien']);
+$sheet->setCellValue('D3', $row['jenis_kelamin']);
+$sheet->setCellValue('E3', $row['nohp_pasien']);
+$sheet->setCellValue('F3', $row['goldar_pasien']);
+$sheet->setCellValue('G3', $row['alamat_pasien']);
+$sheet->setCellValue('H3', $row['jenis']);
+$sheet->setCellValue('I3', $row['lama_perawatan'] . ' hari');
+$sheet->setCellValue('J3', 'Rp. ' . $row['total_tagihan']);
+
+// Mengatur lebar kolom agar lebih rapi
+foreach (range('A', 'J') as $columnID) {
+    $sheet->getColumnDimension($columnID)->setAutoSize(true);
+}
+
+$writer = new Xlsx($spreadsheet);
+$filename = 'data_pasien_' . $row['id_pasien'] . '.xlsx';
+
+header('Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
+header('Content-Disposition: attachment;filename="' . $filename . '"');
+header('Cache-Control: max-age=0');
+
+$writer->save('php://output');
+exit;
+?>
